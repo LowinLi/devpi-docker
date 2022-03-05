@@ -1,0 +1,21 @@
+version: "2.3"
+services:
+  devpi-lib:
+    container_name: devpi-lib
+    image: lowinli98/devpi:v0.1
+    expose:
+      - 7104
+    ports:
+      - "7104:7104"
+    environment:
+      - DEVPISERVER_HOST=0.0.0.0
+      - DEVPISERVER_PORT=7104
+      - DEVPISERVER_ROOT_PASSWORD=password
+      - DEVPISERVER_USER=lowinli
+      - DEVPISERVER_PASSWORD=password
+      - DEVPISERVER_MIRROR_INDEX=pypi
+      - DEVPISERVER_LIB_INDEX=devpi
+      - SOURCE_MIRROR_URL=https://pypi.douban.com/simple
+    restart: always
+    volumes:
+      - ./volume:/var/lib/devpi

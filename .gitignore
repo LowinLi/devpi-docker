@@ -1,0 +1,13 @@
+volume
+*.pyc
+.vscode
+build
+sdist
+__pycache__
+*.egg-info
+dist
+modules.rst
+upload_demo.rst
+upload_demo.src.rst
+pics
+.DS_Store

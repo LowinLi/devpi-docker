@@ -1,0 +1,4 @@
+devpi==2.2.0
+setuptools==50.3.0
+sphinx==4.2.0
+python-dotenv==0.16.0

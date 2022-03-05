@@ -1,0 +1,9 @@
+*.pyc
+.vscode
+build
+sdist
+__pycache__
+*.egg-info
+dist
+modules.rst
+pip_demo.rst
