@@ -113,4 +113,4 @@ trusted-host = 0.0.0.0:7104
 
 ![](./pics/3.png)
 
-![](./pics/4.png)
+![](./pics/download.png)
