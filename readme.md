@@ -44,10 +44,11 @@ services:
 + 访问devpi
 http://0.0.0.0:7104
 
-## 镜像构建
-```bash
-bash build.sh
-```
+## 镜像构建目录
+[./docker](./docker)
+
+## 打包pip包上传示例目录
+[./examples/upload-demo](./examples/upload-demo)
 
 ## 本项目特点
 
