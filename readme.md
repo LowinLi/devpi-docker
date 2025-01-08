@@ -54,7 +54,7 @@ version: "2.3"
 services:
   devpi-lib:
     container_name: devpi-lib
-    image: lowinli98/devpi:v0.1
+    image: lowinli98/devpi:v0.2
     expose:
       - 7104
     ports:
