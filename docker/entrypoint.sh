@@ -33,7 +33,7 @@ if [ ! -f "${DEVPISERVER_SERVERDIR}/.nodeinfo" ]; then
 
         echo "create index ${DEVPISERVER_USER}/${DEVPISERVER_MIRROR_INDEX}"
         devpi index -c "${DEVPISERVER_MIRROR_INDEX}" type=mirror mirror_url="${SOURCE_MIRROR_URL}" mirror_web_url_fmt=${SOURCE_MIRROR_URL}/{name}/
-        devpi index -c "${DEVPISERVER_LIB_INDEX}" bases="${DEVPISERVER_USER}/${DEVPISERVER_MIRROR_INDEX}"
+        devpi index -c "${DEVPISERVER_LIB_INDEX}" bases="${DEVPISERVER_USER}/${DEVPISERVER_MIRROR_INDEX}" volatile=False acl_upload=${DEVPISERVER_USER}
 
         devpi logout
     ) &
