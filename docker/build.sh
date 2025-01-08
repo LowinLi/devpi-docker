@@ -1,2 +1,2 @@
 set -e
-docker build -t lowinli98/devpi:v0.1 .
+docker build -t lowinli98/devpi:v0.2 .
